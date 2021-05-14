@@ -8,10 +8,10 @@
             <a href="<?php echo $base_url; ?>/meldingen/index.php">Meldingen</a>
         </nav>
         <div>
-            <?php if(!isset($_SESSION['user_id'])): ?>
-                <p><a href="logout.php">Uitloggen</a></p>
+            <?php if(!isset($_SESSION['user_id']))?>
+                <p><a href="logout.php"></a>aaaaaaa</p>
             <?php else: ?>
-                <p><a href="login.php">Inloggen</a></p>
+                <p><a href="login.php"></a>aaa</p>
             <?php endif; ?>
         </div>
     </div>
