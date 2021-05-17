@@ -11,6 +11,12 @@
     <?php require_once 'header.php'; ?>
     
     <div class="container home">
+        <?php 
+        if(isset($_GET['msg']))
+        {
+            echo "<div class='msg'>" . $_GET['msg'] . "</div>";
+        }
+        ?>
     	<form action="backend/loginController.php" method="POST">
     		<div class="form-group">
     			<label for="username">Gebruikersnaam:</label>

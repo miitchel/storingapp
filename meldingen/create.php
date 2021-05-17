@@ -30,7 +30,16 @@ if(!isset($_SESSION['user_id']))
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <!-- hier komt een dropdown -->
+                <select name="type" id="type">
+                    <option value="">– kies een type –</option>
+                    <option value="achtbaan">Achtbaan</option>
+                    <option value="draaiend">Draaiende attractie</option>
+                    <option value="kinder">Kinderattractie</option>
+                    <option value="horeca">Horeca tenten</option>
+                    <option value="show">Shows</option>
+                    <option value="water">Water plekken/achtbananen</option>
+                    <option value="overig">Overig</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
@@ -39,6 +48,11 @@ if(!isset($_SESSION['user_id']))
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
                 <input type="text" name="melder" id="melder" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="prioriteit">Melding met prioriteit:</label>
+                <input type="checkbox">
             </div>
             
             <input type="submit" value="Verstuur melding">
