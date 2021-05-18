@@ -11,7 +11,11 @@
             <?php if(isset($_SESSION['user_id'])): ?>
                 <p><a href="<?php echo $base_url; ?>/logout.php">Uitloggen</a></p>
             <?php else: ?>
-                <p><a href="<?php echo $base_url; ?>/login.php">Inloggen</a></p>
+                <div class="groupLogin">
+                    <p><a href="<?php echo $base_url; ?>/register.php">Registreren</a></p>
+                    <p>|</p>
+                    <p><a href="<?php echo $base_url; ?>/login.php">Inloggen</a></p>
+                </div>
             <?php endif; ?>
         </div>
     </div>

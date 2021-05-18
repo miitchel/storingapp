@@ -115,6 +115,15 @@ header .container{
     align-items: center;
 }
 
+.groupLogin{
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupLogin p{
+  padding: 4px;
+}
+
 .logo{
     height: 5rem;
 }
