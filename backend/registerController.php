@@ -38,8 +38,8 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 $query = "INSERT INTO users (username, password) VALUES (:email, :hash)";
 $statement = $conn->prepare($query);
 $statement->execute([
-	":email" => $username,
-	":hash" => $password
+	":email" => $email,
+	":hash" => $hash
 ]);
 
 header("Location: ../login.php");
